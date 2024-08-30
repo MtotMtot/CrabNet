@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour
     public GameObject startMenu;
     public InputField usernameField;
 
-    private void awake()
+    private void awake()    //set instance to this, destroy copies.
     {
         if (instance == null)
         {
@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
 
     }
 
-    public void ConnectToServer()
+    public void ConnectToServer()   //disables UI and connects to target IP (server).
     {
         startMenu.SetActive(false);
         usernameField.interactable = false;

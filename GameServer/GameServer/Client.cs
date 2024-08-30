@@ -22,7 +22,7 @@ namespace GameServer
 
         }
 
-        public class TCP
+        public class TCP    //the TCP class, core of sending/receiving data between server + client(s).
         {
             public TcpClient socket;
 
@@ -48,22 +48,22 @@ namespace GameServer
             }
 
 
-            private void ReceiveCallback(IAsyncResult _result)
+            private void ReceiveCallback(IAsyncResult _result)  // receiving info 
             {
                 try
                 {
-                    int _byteLength = stream.EndRead(_result);
+                    int _byteLength = stream.EndRead(_result);  // legacy way of handing async I/O operations, not needed to func now /\/\/\/\/\ CAN CHANGE /\/\/\/\/\
                     if (_byteLength <= 0)
                     {
-                        return;
+                        return; // if byteLength is <= 0 then nothing to read, return.
                     }
 
                     byte[] _data = new byte[_byteLength];
-                    Array.Copy(receiveBuffer, _data, _byteLength);
+                    Array.Copy(receiveBuffer, _data, _byteLength);  //copies receive buffer to new byte array for reading.
 
                     stream.BeginRead(receiveBuffer, 0, dataBufferSize, ReceiveCallback, null);
                 }
-                catch (Exception e)
+                catch (Exception e) //prevents errors for stopping server, logs exception to console.
                 {
                     Console.WriteLine($"Error receiving TCP data: {e}");
                 }

@@ -17,7 +17,7 @@ namespace GameServer
 
         private static TcpListener tcpListener;
 
-        public static void Start(int _maxPlayers, int _port)
+        public static void Start(int _maxPlayers, int _port)    //sets up server to receive client connections.
         {
             MaxPlayers = _maxPlayers;
             Port = _port;
@@ -32,13 +32,13 @@ namespace GameServer
             Console.WriteLine($"Server started on {Port}.");
         }
 
-        private static void TCPConnectCallback(IAsyncResult _result)
+        private static void TCPConnectCallback(IAsyncResult _result)    //called when client connects
         {
-            TcpClient _client = tcpListener.EndAcceptTcpClient( _result );
-            tcpListener.BeginAcceptTcpClient(new AsyncCallback(TCPConnectCallback), null);
-            Console.WriteLine($"Incoming connection from {_client.Client.RemoteEndPoint}...");
+            TcpClient _client = tcpListener.EndAcceptTcpClient( _result );  //EndAccept to catch this client only, allow transfer of data.
+            tcpListener.BeginAcceptTcpClient(new AsyncCallback(TCPConnectCallback), null);  // restart listen for new clients. its async :)
+            Console.WriteLine($"Incoming connection from {_client.Client.RemoteEndPoint}...");  //writes to console current incoming client connection
 
-            for (int i = 1; i <= MaxPlayers; i++)
+            for (int i = 1; i <= MaxPlayers; i++)   //adds client to list if entry is null vvvvvvv
             {
                 if (clients[i].tcp.socket == null)
                 {
@@ -47,7 +47,7 @@ namespace GameServer
                 }
             }
 
-            Console.WriteLine($"{_client.Client.RemoteEndPoint} failed to coonect: Server Full");
+            Console.WriteLine($"{_client.Client.RemoteEndPoint} failed to connect: Server Full");   //if list is iterated through and no null slots, server is full. disconnect
 
         }
 

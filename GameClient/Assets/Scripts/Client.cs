@@ -15,7 +15,7 @@ public class Client : MonoBehaviour
     public int myId = 0;
     public TCP tcp;
 
-    private void Awake()
+    private void Awake()    // making instance of class
     {
         if (instance == null)
         {
@@ -30,17 +30,17 @@ public class Client : MonoBehaviour
 
     }
 
-    private void Start()
+    private void Start()    // creates a new TCP client on start
     {
-        tcp = new TCP();    
+        tcp = new TCP();
     }
 
-    public void ConnectToServer()
+    public void ConnectToServer()   // used by start menu butto to connect.
     {
         tcp.Connect();
-    } 
+    }
 
-    public class TCP
+    public class TCP    //TCP class, same as class on server using basic setup with stream and receiveBuffer
     {
         public TcpClient socket;
 
@@ -49,7 +49,7 @@ public class Client : MonoBehaviour
 
         public void Connect()
         {
-            socket = new TcpClient
+            socket = new TcpClient  //sets new socket's rec and send buffer size to data buffer size : 4096
             {
                 ReceiveBufferSize = dataBufferSize,
                 SendBufferSize = dataBufferSize
@@ -61,7 +61,7 @@ public class Client : MonoBehaviour
 
         private void ConnectCallback(IAsyncResult _result)
         {
-            socket.EndConnect(_result);
+            socket.EndConnect(_result); //allows a connection to be had between target and client. thread is blocked (cant send data) until EndConnect is called.
 
             if (!socket.Connected)
             {
@@ -70,25 +70,25 @@ public class Client : MonoBehaviour
 
             stream = socket.GetStream();
 
-            stream.BeginRead(receiveBuffer, 0, dataBufferSize, ReceiveCallback, null);
+            stream.BeginRead(receiveBuffer, 0, dataBufferSize, ReceiveCallback, null);  //begin stream read with current receiveBuffer, offset 0, size "bufferSize" : 4096, null object ref.
         }
 
-        private void ReceiveCallback(IAsyncResult _result)
+        private void ReceiveCallback(IAsyncResult _result)  // receiving info from server
         {
             try
             {
-                int _byteLength = stream.EndRead(_result);
+                int _byteLength = stream.EndRead(_result);  // legacy way of handing async I/O operations, not needed to func now /\/\/\/\/\ CAN CHANGE /\/\/\/\/\
                 if (_byteLength <= 0)
                 {
-                    return;
+                    return; // if byteLength is <= 0 then nothing to read, return.
                 }
 
                 byte[] _data = new byte[_byteLength];
-                Array.Copy(receiveBuffer, _data, _byteLength);
+                Array.Copy(receiveBuffer, _data, _byteLength);  //copies receive buffer to new byte array for reading.
 
                 stream.BeginRead(receiveBuffer, 0, dataBufferSize, ReceiveCallback, null);
             }
-            catch (Exception e)
+            catch (Exception e) // catches any exceptions to not brick client, instead logs error.
             {
                 Console.WriteLine($"Error receiving TCP data: {e}");
             }
