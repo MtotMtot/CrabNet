@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour
     public GameObject startMenu;
     public InputField usernameField;
 
-    private void awake()    //set instance to this, destroy copies.
+    private void Awake()    //set instance to this, destroy copies.
     {
         if (instance == null)
         {

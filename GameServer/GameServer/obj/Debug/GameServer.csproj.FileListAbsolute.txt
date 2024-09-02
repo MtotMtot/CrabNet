@@ -5,3 +5,10 @@ C:\Users\loopa\Desktop\NET CODE RAW ;D\GameServer\GameServer\obj\Debug\GameServe
 C:\Users\loopa\Desktop\NET CODE RAW ;D\GameServer\GameServer\obj\Debug\GameServer.csproj.CoreCompileInputs.cache
 C:\Users\loopa\Desktop\NET CODE RAW ;D\GameServer\GameServer\obj\Debug\GameServer.exe
 C:\Users\loopa\Desktop\NET CODE RAW ;D\GameServer\GameServer\obj\Debug\GameServer.pdb
+G:\NET-CODE-RAW\GameServer\GameServer\obj\Debug\GameServer.csproj.AssemblyReference.cache
+G:\NET-CODE-RAW\GameServer\GameServer\obj\Debug\GameServer.csproj.CoreCompileInputs.cache
+G:\NET-CODE-RAW\GameServer\GameServer\obj\Debug\GameServer.exe
+G:\NET-CODE-RAW\GameServer\GameServer\obj\Debug\GameServer.pdb
+G:\NET-CODE-RAW\GameServer\GameServer\bin\Debug\GameServer.exe.config
+G:\NET-CODE-RAW\GameServer\GameServer\bin\Debug\GameServer.exe
+G:\NET-CODE-RAW\GameServer\GameServer\bin\Debug\GameServer.pdb
