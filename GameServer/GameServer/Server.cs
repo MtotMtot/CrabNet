@@ -65,6 +65,25 @@ namespace GameServer
                 IPEndPoint _clientEndPoint = new IPEndPoint(IPAddress.Any, 0);
                 byte[] _data = udpListener.EndReceive(_result, ref _clientEndPoint);
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error receiving UDP data: {ex.Message}");
+            }
+        }
+
+        private static void UDPReceiveCallback(IAsyncResult _result)
+        {
+            try
+            {
+                IPEndPoint _clientEndPoint = new IPEndPoint(IPAddress.Any, 0);
+                byte[] _data = udpListener.EndReceive(_result, ref _clientEndPoint);
+                // Process the received data here
+                udpListener.BeginReceive(UDPReceiveCallback, null); // Restart listening for UDP packets
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error receiving UDP data: {ex.Message}");
+            }
         }
 
         private static void InitializeServerData()
@@ -79,6 +98,21 @@ namespace GameServer
                 { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived }
             };
             Console.WriteLine("Initialized packets");
+        }
+
+        public static void SendUDPData(IPEndPoint _endPoint, Packet _packet)
+        {
+            try
+            {
+                if (_endPoint != null)
+                {
+                    udpListener.Send(_packet.ToArray(), _packet.Length(), _endPoint);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error sending UDP data to {_endPoint}: {ex.Message}");
+            }
         }
     }
 }

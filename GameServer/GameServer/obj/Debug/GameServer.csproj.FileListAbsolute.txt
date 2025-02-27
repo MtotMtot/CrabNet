@@ -12,3 +12,10 @@ G:\NET-CODE-RAW\GameServer\GameServer\obj\Debug\GameServer.pdb
 G:\NET-CODE-RAW\GameServer\GameServer\bin\Debug\GameServer.exe.config
 G:\NET-CODE-RAW\GameServer\GameServer\bin\Debug\GameServer.exe
 G:\NET-CODE-RAW\GameServer\GameServer\bin\Debug\GameServer.pdb
+G:\CrabNet\GameServer\GameServer\bin\Debug\GameServer.exe.config
+G:\CrabNet\GameServer\GameServer\bin\Debug\GameServer.exe
+G:\CrabNet\GameServer\GameServer\bin\Debug\GameServer.pdb
+G:\CrabNet\GameServer\GameServer\obj\Debug\GameServer.csproj.AssemblyReference.cache
+G:\CrabNet\GameServer\GameServer\obj\Debug\GameServer.csproj.CoreCompileInputs.cache
+G:\CrabNet\GameServer\GameServer\obj\Debug\GameServer.exe
+G:\CrabNet\GameServer\GameServer\obj\Debug\GameServer.pdb
