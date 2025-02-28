@@ -178,19 +178,22 @@ namespace GameServer
 
         public void SendIntoGame(string _playerName)
         {
-            player = new Player(id, _playerName, new System.Numerics.Vector3(0, 0, 0));
+            player = new Player(id, _playerName, new Vector3(0, 0, 0));
 
             foreach (Client _client in Server.clients.Values)
             {
-                if (_client.id != id)
+                if (_client.player != null)
                 {
-                    ServerSend.SpawnPlayer(id, _client.player);
+                    if (_client.id != id)
+                    {
+                        ServerSend.SpawnPlayer(id, _client.player);
+                    }
                 }
             }
 
             foreach (Client _client in Server.clients.Values)
             {
-                if (_client.id != null)
+                if (_client.player != null)
                 {
                     ServerSend.SpawnPlayer(_client.id, player);
                 }
