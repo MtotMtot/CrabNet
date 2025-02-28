@@ -19,5 +19,13 @@ namespace GameServer
                 Console.WriteLine($"Player \"{_username}\" (ID: {_fromClient}) has assued the wrong client ID ({_clientIdCheck})");
             }
         }
+
+        public static void UDPTestReceived(int _fromClient, Packet _packet)
+        {
+            string _msg  = _packet.ReadString();
+
+            Console.WriteLine($"Received packet via UDP. Contains msg: {_msg}");
+        }
+
     }
 }

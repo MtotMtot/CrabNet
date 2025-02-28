@@ -79,10 +79,52 @@ namespace GameServer
                 byte[] _data = udpListener.EndReceive(_result, ref _clientEndPoint);
                 // Process the received data here
                 udpListener.BeginReceive(UDPReceiveCallback, null); // Restart listening for UDP packets
+
+                if (_data.Length < 4)
+                {
+                    return;
+                }
+
+                using (Packet _packet = new Packet(_data))
+                {
+                    int _clientId = _packet.ReadInt();
+
+                    if (_clientId == 0)
+                    {
+                        return;
+                    }
+
+                    if (clients[_clientId].udp.endPoint == null)
+                    {
+                        clients[_clientId].udp.Connect(_clientEndPoint);
+                        return;
+                    }
+
+                    if (clients[_clientId].udp.endPoint.Equals(_clientEndPoint))
+                    {
+                        clients[_clientId].udp.HandleData(_packet);
+                    }
+                }
+
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error receiving UDP data: {ex.Message}");
+                Console.WriteLine($"Error receiving UDP data: {ex}");
+            }
+        }
+
+        public static void SendUDPData(IPEndPoint _clientEndPoint, Packet _packet)
+        {
+            try
+            {
+                if (_clientEndPoint != null)
+                {
+                    udpListener.BeginSend(_packet.ToArray(), _packet.Length(), _clientEndPoint, null, null);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error sending UDP data to {_clientEndPoint}: {ex}");
             }
         }
 
@@ -95,24 +137,12 @@ namespace GameServer
 
             packetHandlers = new Dictionary<int, PacketHandler>()
             {
-                { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived }
+                { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived },
+                { (int)ClientPackets.udpTestReceived, ServerHandle.UDPTestReceived }
             };
             Console.WriteLine("Initialized packets");
         }
 
-        public static void SendUDPData(IPEndPoint _endPoint, Packet _packet)
-        {
-            try
-            {
-                if (_endPoint != null)
-                {
-                    udpListener.Send(_packet.ToArray(), _packet.Length(), _endPoint);
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error sending UDP data to {_endPoint}: {ex.Message}");
-            }
-        }
+        
     }
 }

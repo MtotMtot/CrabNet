@@ -205,9 +205,9 @@ public class Client : MonoBehaviour
                     socket.BeginSend(_packet.ToArray(), _packet.Length(), null, null);   
                 }
             }
-            catch (Exception e)
+            catch (Exception _ex)
             {
-                Debug.Log($"Error sending data to server via UDP: {e}");
+                Debug.Log($"Error sending data to server via UDP: {_ex}");
             }
         }
 
@@ -255,7 +255,8 @@ public class Client : MonoBehaviour
     {
         packetHandlers = new Dictionary<int, PacketHandler>()
             {
-                { (int)ServerPackets.welcome, ClientHandle.Welcome }
+                { (int)ServerPackets.welcome, ClientHandle.Welcome },
+                { (int)ServerPackets.udpTest, ClientHandle.UDPTest }
             };
         Debug.Log("Initialized packets.");
     }
