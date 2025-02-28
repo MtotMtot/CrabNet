@@ -153,7 +153,6 @@ namespace GameServer
             public void Connect(IPEndPoint _endPoint)
             {
                 endPoint = _endPoint;
-                ServerSend.UDPTest(id);
             }
 
             public void SendData(Packet _packet)
@@ -185,11 +184,19 @@ namespace GameServer
             {
                 if (_client.id != id)
                 {
-                    Server.SpawnPlayer(id, _client.player);
+                    ServerSend.SpawnPlayer(id, _client.player);
                 }
             }
+
+            foreach (Client _client in Server.clients.Values)
+            {
+                if (_client.id != null)
+                {
+                    ServerSend.SpawnPlayer(_client.id, player);
+                }
+            }
+
         }
 
-        foreach (Client _client in )
     }
 }
