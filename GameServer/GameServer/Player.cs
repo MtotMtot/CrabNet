@@ -13,7 +13,7 @@ namespace GameServer
         public Vector3 position;
         public Quaternion rotation;
 
-        private float moveSpeed = 5f / Constants.TICKS_PER_SECOND;
+        private float moveSpeed = 5f / Constants.TICKS_PER_SEC;
         private bool[] inputs;
 
         public Player(int _id, string _username, Vector3 _spawnPosition)
