@@ -198,8 +198,6 @@ namespace GameServer
                     ServerSend.SpawnPlayer(_client.id, player);
                 }
             }
-
         }
-
     }
 }

@@ -3,11 +3,11 @@ using System.Threading;
 
 namespace GameServer
 {
-    internal class Program
+    class Program
     {
-        private static bool isRunning = true;
+        private static bool isRunning = false;
 
-        static void Main(string[] args) // main program exec, sets title, starts server with maxplayer 4, port 26950, waits for keypress to close.
+        static void Main(string[] args)
         {
             Console.Title = "Game Server";
             isRunning = true;
@@ -15,7 +15,7 @@ namespace GameServer
             Thread mainThread = new Thread(new ThreadStart(MainThread));
             mainThread.Start();
 
-            Server.Start(4, 26950);
+            Server.Start(50, 26950);
         }
 
         private static void MainThread()
@@ -31,7 +31,7 @@ namespace GameServer
 
                     _nextLoop = _nextLoop.AddMilliseconds(Constants.MS_PER_TICK);
 
-                    if(_nextLoop > DateTime.Now)
+                    if (_nextLoop > DateTime.Now)
                     {
                         Thread.Sleep(_nextLoop - DateTime.Now);
                     }

@@ -3,40 +3,44 @@
   "WorkspaceRootPath": "G:\\CrabNet\\GameServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|G:\\CrabNet\\GameServer\\GameServer\\Packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:GameServer\\Packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|g:\\crabnet\\gameserver\\gameserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|g:\\crabnet\\gameserver\\gameserver\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|g:\\crabnet\\gameserver\\gameserver\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|g:\\crabnet\\gameserver\\gameserver\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|g:\\crabnet\\gameserver\\gameserver\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|g:\\crabnet\\gameserver\\gameserver\\threadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\threadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|g:\\crabnet\\gameserver\\gameserver\\serversend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\serversend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|g:\\crabnet\\gameserver\\gameserver\\serverhandle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\serverhandle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|g:\\crabnet\\gameserver\\gameserver\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|G:\\CrabNet\\GameServer\\gameserver\\serversend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\serversend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|G:\\CrabNet\\GameServer\\gameserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|G:\\CrabNet\\GameServer\\gameserver\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|g:\\crabnet\\gameserver\\gameserver\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|G:\\CrabNet\\GameServer\\gameserver\\serverhandle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\serverhandle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|G:\\CrabNet\\GameServer\\gameserver\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|G:\\CrabNet\\GameServer\\gameserver\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|G:\\CrabNet\\GameServer\\gameserver\\threadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A07CF56-CE47-4DE7-AF71-EF6E93577F97}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\threadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,118 +50,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Constants.cs",
-              "DocumentMoniker": "G:\\CrabNet\\GameServer\\GameServer\\Constants.cs",
-              "RelativeDocumentMoniker": "GameServer\\Constants.cs",
-              "ToolTip": "G:\\CrabNet\\GameServer\\GameServer\\Constants.cs",
-              "RelativeToolTip": "GameServer\\Constants.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T20:54:28.156Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GameLogic.cs",
-              "DocumentMoniker": "G:\\CrabNet\\GameServer\\GameServer\\GameLogic.cs",
-              "RelativeDocumentMoniker": "GameServer\\GameLogic.cs",
-              "ToolTip": "G:\\CrabNet\\GameServer\\GameServer\\GameLogic.cs",
-              "RelativeToolTip": "GameServer\\GameLogic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwwAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T20:51:38.273Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ServerHandle.cs",
-              "DocumentMoniker": "G:\\CrabNet\\GameServer\\GameServer\\ServerHandle.cs",
-              "RelativeDocumentMoniker": "GameServer\\ServerHandle.cs",
-              "ToolTip": "G:\\CrabNet\\GameServer\\GameServer\\ServerHandle.cs",
-              "RelativeToolTip": "GameServer\\ServerHandle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T20:38:48.77Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "ThreadManager.cs",
               "DocumentMoniker": "G:\\CrabNet\\GameServer\\GameServer\\ThreadManager.cs",
               "RelativeDocumentMoniker": "GameServer\\ThreadManager.cs",
               "ToolTip": "G:\\CrabNet\\GameServer\\GameServer\\ThreadManager.cs",
               "RelativeToolTip": "GameServer\\ThreadManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAmwA4AAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T17:14:43.364Z"
+              "WhenOpened": "2025-03-03T02:26:21.312Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ServerSend.cs",
               "DocumentMoniker": "G:\\CrabNet\\GameServer\\GameServer\\ServerSend.cs",
               "RelativeDocumentMoniker": "GameServer\\ServerSend.cs",
               "ToolTip": "G:\\CrabNet\\GameServer\\GameServer\\ServerSend.cs",
               "RelativeToolTip": "GameServer\\ServerSend.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T15:45:58.827Z",
+              "WhenOpened": "2025-03-03T02:26:20.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Client.cs",
-              "DocumentMoniker": "G:\\CrabNet\\GameServer\\GameServer\\Client.cs",
-              "RelativeDocumentMoniker": "GameServer\\Client.cs",
-              "ToolTip": "G:\\CrabNet\\GameServer\\GameServer\\Client.cs",
-              "RelativeToolTip": "GameServer\\Client.cs",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAwwK0AAAATAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ServerHandle.cs",
+              "DocumentMoniker": "G:\\CrabNet\\GameServer\\GameServer\\ServerHandle.cs",
+              "RelativeDocumentMoniker": "GameServer\\ServerHandle.cs",
+              "ToolTip": "G:\\CrabNet\\GameServer\\GameServer\\ServerHandle.cs",
+              "RelativeToolTip": "GameServer\\ServerHandle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T03:30:41.468Z"
+              "WhenOpened": "2025-03-03T02:26:20.218Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Server.cs",
               "DocumentMoniker": "G:\\CrabNet\\GameServer\\GameServer\\Server.cs",
               "RelativeDocumentMoniker": "GameServer\\Server.cs",
               "ToolTip": "G:\\CrabNet\\GameServer\\GameServer\\Server.cs",
               "RelativeToolTip": "GameServer\\Server.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T03:30:38.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\CrabNet\\GameServer\\GameServer\\Program.cs",
-              "RelativeDocumentMoniker": "GameServer\\Program.cs",
-              "ToolTip": "G:\\CrabNet\\GameServer\\GameServer\\Program.cs",
-              "RelativeToolTip": "GameServer\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T03:17:35.816Z",
+              "WhenOpened": "2025-03-03T02:26:19.698Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\CrabNet\\GameServer\\GameServer\\Program.cs",
+              "RelativeDocumentMoniker": "GameServer\\Program.cs",
+              "ToolTip": "G:\\CrabNet\\GameServer\\GameServer\\Program.cs",
+              "RelativeToolTip": "GameServer\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T02:26:19.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Packet.cs",
               "DocumentMoniker": "G:\\CrabNet\\GameServer\\GameServer\\Packet.cs",
               "RelativeDocumentMoniker": "GameServer\\Packet.cs",
               "ToolTip": "G:\\CrabNet\\GameServer\\GameServer\\Packet.cs",
               "RelativeToolTip": "GameServer\\Packet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAOoAAAAAAAAAAAA2wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T14:07:28.762Z",
+              "WhenOpened": "2025-03-03T02:26:17.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameLogic.cs",
+              "DocumentMoniker": "G:\\CrabNet\\GameServer\\GameServer\\GameLogic.cs",
+              "RelativeDocumentMoniker": "GameServer\\GameLogic.cs",
+              "ToolTip": "G:\\CrabNet\\GameServer\\GameServer\\GameLogic.cs",
+              "RelativeToolTip": "GameServer\\GameLogic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T02:26:16.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Player.cs",
+              "DocumentMoniker": "G:\\CrabNet\\GameServer\\GameServer\\Player.cs",
+              "RelativeDocumentMoniker": "GameServer\\Player.cs",
+              "ToolTip": "G:\\CrabNet\\GameServer\\GameServer\\Player.cs",
+              "RelativeToolTip": "GameServer\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T02:26:18.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "G:\\CrabNet\\GameServer\\GameServer\\Constants.cs",
+              "RelativeDocumentMoniker": "GameServer\\Constants.cs",
+              "ToolTip": "G:\\CrabNet\\GameServer\\GameServer\\Constants.cs",
+              "RelativeToolTip": "GameServer\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T02:26:13.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Client.cs",
+              "DocumentMoniker": "G:\\CrabNet\\GameServer\\GameServer\\Client.cs",
+              "RelativeDocumentMoniker": "GameServer\\Client.cs",
+              "ToolTip": "G:\\CrabNet\\GameServer\\GameServer\\Client.cs",
+              "RelativeToolTip": "GameServer\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T02:26:14.593Z",
               "EditorCaption": ""
             }
           ]

@@ -1,6 +1,5 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -12,26 +11,23 @@ public class GameManager : MonoBehaviour
     public GameObject localPlayerPrefab;
     public GameObject playerPrefab;
 
-    private void Awake()    // making instance of class
+    private void Awake()
     {
-
         if (instance == null)
         {
             instance = this;
-
         }
         else if (instance != this)
         {
-            Debug.Log("Instance already exists, destroying object");
+            Debug.Log("Instance already exists, destroying object!");
             Destroy(this);
         }
-
     }
 
     public void SpawnPlayer(int _id, string _username, Vector3 _position, Quaternion _rotation)
     {
         GameObject _player;
-        if(_id == Client.instance.myId)
+        if (_id == Client.instance.myId)
         {
             _player = Instantiate(localPlayerPrefab, _position, _rotation);
         }

@@ -19,3 +19,6 @@ G:\CrabNet\GameServer\GameServer\obj\Debug\GameServer.csproj.AssemblyReference.c
 G:\CrabNet\GameServer\GameServer\obj\Debug\GameServer.csproj.CoreCompileInputs.cache
 G:\CrabNet\GameServer\GameServer\obj\Debug\GameServer.exe
 G:\CrabNet\GameServer\GameServer\obj\Debug\GameServer.pdb
+G:\CrabNet\GameServer\GameServer\bin\Debug\System.Numerics.Vectors.dll
+G:\CrabNet\GameServer\GameServer\bin\Debug\System.Numerics.Vectors.xml
+G:\CrabNet\GameServer\GameServer\obj\Debug\GameServer.csproj.Up2Date
