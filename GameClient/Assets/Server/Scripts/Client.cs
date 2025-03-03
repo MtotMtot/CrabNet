@@ -35,7 +35,7 @@ public class ServerClient
             id = _id;
         }
 
-        /// <summary>Initializes the newly connected client's TCP-related info.</summary>
+        /// <summary>Initializes the newly connected client's TCP info</summary>
         /// <param name="_socket">The TcpClient instance of the newly connected client.</param>
         public void Connect(TcpClient _socket)
         {
@@ -53,7 +53,7 @@ public class ServerClient
             ServerSend.Welcome(id, "Welcome to the server!");
         }
 
-        /// <summary>Sends data to the client via TCP.</summary>
+        /// <summary>Sends data to the client via TCP</summary>
         /// <param name="_packet">The packet to send.</param>
         public void SendData(Packet _packet)
         {

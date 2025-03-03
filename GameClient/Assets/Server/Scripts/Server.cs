@@ -117,7 +117,7 @@ public class Server
         }
     }
 
-    /// <summary>Initializes all necessary server data.</summary>
+    /// <summary>Initializes necessary server data.</summary>
     private static void InitializeServerData()
     {
         for (int i = 1; i <= MaxPlayers; i++)
