@@ -27,11 +27,12 @@ public class GameManager : MonoBehaviour
     public void SpawnPlayer(int _id, string _username, Vector3 _position, Quaternion _rotation)
     {
         GameObject _player;
-        if (_id == Client.instance.myId)
+        if (_id == Client.instance.myId) //if id is the local player
         {
             _player = Instantiate(localPlayerPrefab, _position, _rotation);
+
         }
-        else
+        else //if id is not the local player
         {
             _player = Instantiate(playerPrefab, _position, _rotation);
         }

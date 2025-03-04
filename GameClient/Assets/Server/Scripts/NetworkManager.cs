@@ -8,6 +8,7 @@ public class NetworkManager : MonoBehaviour
 
     public GameObject playerPrefab;
 
+    public bool isHost = false;
     private void Awake()
     {
         if (instance == null)

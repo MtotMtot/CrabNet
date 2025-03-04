@@ -31,4 +31,13 @@ public class UIManager : MonoBehaviour
         usernameField.interactable = false;
         Client.instance.ConnectToServer();
     }
+
+    public void HostServer()
+    {
+        NetworkManager.instance.gameObject.SetActive(true);
+        NetworkManager.instance.isHost = true;
+        startMenu.SetActive(false);
+        usernameField.interactable = false;
+        Client.instance.ConnectToServer();
+    }
 }
