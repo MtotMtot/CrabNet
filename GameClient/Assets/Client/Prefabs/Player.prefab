@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2222168539772093143}
   - component: {fileID: 5288365040059632936}
-  - component: {fileID: 3645343193418912735}
   - component: {fileID: 553851282139065221}
   m_Layer: 0
   m_Name: Player
@@ -50,27 +49,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   username: 
---- !u!114 &3645343193418912735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3085501487958207604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32b40116aeaa16648baa6249c950dda8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkingSpeed: 7.5
-  runningSpeed: 11.5
-  jumpSpeed: 8
-  gravity: 20
-  lookSpeed: 2
-  lookXLimit: 45
-  canMove: 1
-  cameraYOffset: 0.4
-  visor: {fileID: 0}
 --- !u!143 &553851282139065221
 CharacterController:
   m_ObjectHideFlags: 0
